@@ -18,7 +18,7 @@ import matplotlib.image as mpimg
 import numpy as np
 
 
-path='C:/Python Scripts/OCR/PDF'
+path='path of the file'
 try:
     os.mkdir('Converted')
 except:
@@ -64,7 +64,7 @@ for listt in listing:
         path4='C:/Python Scripts/OCR/PDF/Converted'
         save_path='C:/Python Scripts/OCR/Final'
         config = ('-l eng --oem 1 --psm 3')
-        pytesseract.pytesseract.tesseract_cmd = r'C:\Users\Dhruv\AppData\Local\Tesseract-OCR\tesseract.exe'
+        pytesseract.pytesseract.tesseract_cmd = r'C:\Dhruv\Tesseract-OCR\tesseract.exe'
         path5 = os.path.join(path4,listt.replace('.pdf',''))
         listing3 = os.listdir(path5)    
         #print(listing3)
